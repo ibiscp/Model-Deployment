@@ -1,8 +1,8 @@
 [tool.poetry]
-name = "google_playstore_ratings"
+name = "model_training"
 version = "0.1.0"
-description = "Prediction of google playstore app rating using mlops techniques"
-authors = ["rafa <rkchelebiev@gmail.com>"]
+description = "Example on how to deploy a model using FastAPI"
+authors = ["Ibis Prevedello <ibiscp@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "3.8.16"

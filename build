@@ -1,0 +1,4 @@
+#!/bin/bash
+
+docker build -t train:latest ./containers/model_training/
+docker build -t serve:latest ./containers/model_prediction/

@@ -38,18 +38,18 @@ services:
     networks:
       - default
 
-  pgadmin:
-    image: dpage/pgadmin4
-    restart: always
-    environment:
-      - PGADMIN_DEFAULT_EMAIL=${PGADMIN_DEFAULT_EMAIL}
-      - PGADMIN_DEFAULT_PASSWORD=${PGADMIN_DEFAULT_PASSWORD}
-    volumes:
-       - ./data/pgadmin/:/var/lib/pgadmin
-    ports:
-      - "5050:80"
-    networks:
-      - default
+  # pgadmin:
+  #   image: dpage/pgadmin4
+  #   restart: always
+  #   environment:
+  #     - PGADMIN_DEFAULT_EMAIL=${PGADMIN_DEFAULT_EMAIL}
+  #     - PGADMIN_DEFAULT_PASSWORD=${PGADMIN_DEFAULT_PASSWORD}
+  #   volumes:
+  #      - ./data/pgadmin/:/var/lib/pgadmin
+  #   ports:
+  #     - "5050:80"
+  #   networks:
+  #     - default
 
   mlflow:
     restart: always
